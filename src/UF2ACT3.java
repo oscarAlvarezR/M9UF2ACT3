@@ -20,6 +20,6 @@ public class UF2ACT3 extends RecursiveTask<Long> {
     
     public static void main(String[] args){
         ForkJoinPool pool = new ForkJoinPool();
-        System.out.println("Calculat:  " + pool.invoke(new UF2ACT3(35)));    
+        System.out.println("Calculat:  " + pool.invoke(new UF2ACT3(40)));    
     }
 }
