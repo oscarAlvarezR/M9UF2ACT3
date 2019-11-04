@@ -6,11 +6,16 @@ public class MaximTask extends RecursiveTask<Short> {
 	private static final int LLINDAR=10000000;
 	private short[] arr ;
 	private int inici, fi;
+	// Variable contador
+	public static int contador = 0;
 
 	public MaximTask(short[] arr, int inici, int fi) {
 		this.arr = arr;
 		this.inici = inici;
 		this.fi = fi;
+		// Mostrem el comptador amb tot el que demana l'activitat
+		System.out.println("Comptador " + (MaximTask.contador += 1) + " Inici " + inici + " Fi " + fi);
+		
 	}
 
 	private short getMaxSeq(){
