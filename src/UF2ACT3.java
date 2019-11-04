@@ -7,6 +7,7 @@ public class UF2ACT3 extends RecursiveTask<Long> {
 	public UF2ACT3(long numero){
         this.numero=numero;
     } 
+	
     @Override
     protected Long compute() {
         //double calcul = java.lang.Math.cos(54879854);
@@ -29,7 +30,7 @@ public class UF2ACT3 extends RecursiveTask<Long> {
 
     public static void main(String[] args){
         ForkJoinPool pool = new ForkJoinPool();
-        System.out.println("Calculat:  " + pool.invoke(new UF2ACT3(46)));
-        System.out.println("Calculat:  " + calculaFibonacci(46));
+        System.out.println("Calculat:  " + pool.invoke(new UF2ACT3(40)));
+        System.out.println("Calculat:  " + calculaFibonacci(40));
     }
 }
